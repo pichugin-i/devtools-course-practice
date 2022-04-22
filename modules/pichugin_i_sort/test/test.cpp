@@ -28,7 +28,7 @@ TEST(SelectionSort, Throw_NO_operator) {
   int Arr[] = {2, 5, 1, 8};
   SortSelection s, s1;
   s.Sort();
-  ASSERT_NO_THROW(s1=s);
+  ASSERT_NO_THROW(s1 = s);
 }
 
 TEST(SelectionSort, Sort_OKAY) {
