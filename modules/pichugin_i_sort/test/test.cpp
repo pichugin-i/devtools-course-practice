@@ -25,6 +25,12 @@ TEST(SelectionSort, Throw_NO_oprer) {
   ASSERT_NO_THROW(s.operator=(s));
 }
 
+TEST(SelectionSort, Throw_NO_oprerr) {
+  int Arr[] = {2, 5, 1, 8};
+  SortSelection s(Arr, 4);
+  ASSERT_NO_THROW(s.operator=(s));
+}
+
 TEST(SelectionSort, Throw_NO_Copy) {
   int Arr[] = {2, 5, 1, 8};
   SortSelection s;
