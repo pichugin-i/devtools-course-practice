@@ -23,17 +23,6 @@ void HashmapApplication::help(const char* appname, const char* message) {
         "and <operation> is one of 'INSERT', 'ERASE', 'READ'.\n";
 }
 
-int parseInt(const char* arg) {
-    char* end;
-    int value = strtol(arg, &end, 10);
-
-    if (end[0]) {
-        throw std::string("Wrong number format!");
-    }
-
-    return value;
-}
-
 std::string HashmapApplication::operator()(int argc, const char** argv) {
     if (argc == 1) {
         help("", "");
