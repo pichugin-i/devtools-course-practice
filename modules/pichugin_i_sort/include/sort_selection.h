@@ -11,7 +11,6 @@ class SortSelection {
  private:
   int* A;
   int count;
-  void Copy(int* _A, int _count);
 
  public:
   SortSelection();
@@ -20,6 +19,7 @@ class SortSelection {
   SortSelection& operator=(const SortSelection& obj);
 
   void Sort();
+  void Copy(int* _A, int _count);
   bool Ex(int* Arr, int count);
 };
 

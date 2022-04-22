@@ -9,7 +9,9 @@ void SortSelection::Copy(int* _A, int _count) {
     count = _count;
     A = new int[count];
 
-  for (int i = 0; i < count; i++) A[i] = _A[i];
+  for (int i = 0; i < count; i++) {
+      A[i] = _A[i];
+    }
 }
 
 SortSelection::SortSelection() {

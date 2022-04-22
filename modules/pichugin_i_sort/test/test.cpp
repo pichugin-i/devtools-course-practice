@@ -8,6 +8,29 @@ TEST(SelectionSort, Throw_NO) {
   ASSERT_NO_THROW(SortSelection(Arr, 4));
 }
 
+TEST(SelectionSort, Throw_NO_Copy) {
+  int Arr[] = {2, 5, 1, 8};
+  SortSelection s;
+  ASSERT_NO_THROW(s.Copy(Arr, 4));
+}
+
+TEST(SelectionSort, Throw_NO_def) {
+  ASSERT_NO_THROW(SortSelection());
+}
+
+TEST(SelectionSort, Throw_NO_sort) {
+  int Arr[] = {2, 5, 1, 8};
+  SortSelection s;
+  ASSERT_NO_THROW(s.Sort());
+}
+
+TEST(SelectionSort, Throw_NO_operator) {
+  int Arr[] = {2, 5, 1, 8};
+  SortSelection s, s1;
+  s.Sort();
+  ASSERT_NO_THROW(s1=s);
+}
+
 TEST(SelectionSort, Sort_OKAY) {
   int Arr[] = {2, 5, 1, 8};
 
